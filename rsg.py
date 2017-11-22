@@ -9,7 +9,7 @@ def gaussian_mixture_cdf(x, means, covars, weights):
     return q
 
 
-def correct(values, gpl):
+def correct(values):
     f = h5py.File('FitGMM_gage_GPL1261.h5', 'r')
     W = f['weights']
     M = f['means']
@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
     # NOTE Specific to GPL1261, q-values, and list of genesets.txt (features must be in this order).
     
-    test = str([1.5] * 2682).replace('[', '').replace(']', '')
+    test = str([0.01] * 2682).replace('[', '').replace(']', '')
     #string = sys.argv[1]
     
     values = sp.asarray(test.split(','), dtype=float)
