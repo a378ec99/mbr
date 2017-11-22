@@ -23,7 +23,7 @@ def correct(values, gpl):
 
 if __name__ == '__main__':
 
-    # NOTE Specific to GPL1261, q-values, and list of genesets.txt (must be in correct order).
+    # NOTE Specific to GPL1261, q-values, and list of genesets.txt (features must be in this order).
 
     string = sys.argv[1]
     values = sp.asarray(string.split(','), dtype=float)
