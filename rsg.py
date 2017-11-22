@@ -24,8 +24,13 @@ def correct(values, gpl):
 if __name__ == '__main__':
 
     # NOTE Specific to GPL1261, q-values, and list of genesets.txt (features must be in this order).
-
-    string = sys.argv[1]
-    values = sp.asarray(string.split(','), dtype=float)
+    
+    test = str([1.5] * 2682).replace('[', '').replace(']', '')
+    #string = sys.argv[1]
+    
+    values = sp.asarray(test.split(','), dtype=float)
     sp.savetxt('out.csv', sp.atleast_2d(correct(values)), delimiter=',')
 
+
+    
+    
