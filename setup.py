@@ -9,7 +9,7 @@ setup(
     url='https://github.com/a378ec99/mbr',
     license='LICENSE.txt',
     long_description=open('README.txt').read(),
-    keywords=('biological relevance'),
+    keywords=('biological relevance', 'gene set enrichment', 'null distribution'),
     packages=find_packages(exclude=['tests']),
-    install_requires=['anaconda >= 5.0.1'],
+    install_requires=['scipy >= 0.19.0', 'numpy >= 1.11.3', 'h5py >= 2.6.0', 'matplotlib >= 1.5.3', 'seaborn >= 0.7.1']
 )

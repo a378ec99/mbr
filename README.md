@@ -5,5 +5,9 @@ The algorithm rescales q-values of gene set enrichment tests based on null distr
 
 **Dependencies**
 
-- anaconda >= 5.0.1
+- scipy >= 0.19.0
+- numpy >= 1.11.3
+- h5py >= 2.6.0
+- matplotlib >= 1.5.3
+- seaborn >= 0.7.1
 
