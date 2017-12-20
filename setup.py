@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='MBR',
+    name='mbr',
     version='0.1.0',
     description='Measure of Biological Relevance',
     author='Sebastian Ohse',
